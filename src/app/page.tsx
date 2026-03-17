@@ -96,7 +96,7 @@ export default function LandingPage() {
           useInvertedBackground={true}
           mediaAnimation="blur-reveal"
           faqsAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/young-woman-drinking-coffee-while-sitting-bed-hotel-room_23-2149304033.jpg?_wi=2"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AT21DDEbCUKElwIvjwYyyd5jJX/uploaded-1773736440356-3ts9tf95.jpg"
           imageAlt="Ginza Beauty Salon FAQ"
           mediaPosition="left"
           faqs={[
@@ -129,7 +129,7 @@ Open: 9AM -
           mediaPosition="left"
           mediaAnimation="blur-reveal"
           useInvertedBackground={false}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AT21DDEbCUKElwIvjwYyyd5jJX/uploaded-1773735263329-p8fqropj.jpg"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AT21DDEbCUKElwIvjwYyyd5jJX/uploaded-1773736458342-7tiww9rq.jpg"
           imageAlt="Ginza Beauty Salon Location"
           background={{ variant: "plain" }}
           tagIcon={MapPin}
