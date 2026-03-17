@@ -46,7 +46,7 @@ export default function LandingPage() {
             { text: "WhatsApp", href: "https://wa.me/971434071171" }
           ]}
           background={{ variant: "plain" }}
-          imageSrc="http://img.b2bpic.net/free-photo/young-woman-drinking-coffee-while-sitting-bed-hotel-room_23-2149304033.jpg?_wi=1"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AT21DDEbCUKElwIvjwYyyd5jJX/uploaded-1773736258820-723nbl00.jpg"
           imageAlt="Ginza Beauty Luxury Japanese Salon Interior"
           mediaAnimation="blur-reveal"
           buttonAnimation="slide-up"
@@ -76,13 +76,13 @@ export default function LandingPage() {
           useInvertedBackground={false}
           products={[
             {
-              id: "lash-extensions",              name: "Lash Extensions",              price: "From AED 350",              imageSrc: "http://img.b2bpic.net/free-photo/woman-with-eyelashes-extension-side-view_23-2149909207.jpg",              imageAlt: "Professional Lash Extensions Service"
+              id: "lash-extensions",              name: "Lash Extensions",              price: "From AED 350",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AT21DDEbCUKElwIvjwYyyd5jJX/uploaded-1773736332501-hn800tex.jpg",              imageAlt: "Professional Lash Extensions Service"
             },
             {
-              id: "japanese-nails",              name: "Japanese Gel Nails",              price: "From AED 280",              imageSrc: "http://img.b2bpic.net/free-photo/woman-hand-with-red-manicure-two-rings-fingers-beautiful-green-palm-leaf-tropical-gray-wall_343596-3253.jpg",              imageAlt: "Luxury Japanese Nail Art Service"
+              id: "japanese-nails",              name: "Japanese Gel Nails",              price: "From AED 280",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AT21DDEbCUKElwIvjwYyyd5jJX/uploaded-1773736299774-xy8c7i1t.jpg",              imageAlt: "Luxury Japanese Nail Art Service"
             },
             {
-              id: "hand-care",              name: "Hand & Foot Care",              price: "From AED 200",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-manicurist-holding-nail-tool_23-2149171332.jpg",              imageAlt: "Premium Hand and Foot Treatment"
+              id: "hand-care",              name: "Pedicure",              price: "From AED 200",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AT21DDEbCUKElwIvjwYyyd5jJX/uploaded-1773736373401-zowypo31.jpg",              imageAlt: "Premium Hand and Foot Treatment"
             }
           ]}
         />
@@ -121,9 +121,11 @@ export default function LandingPage() {
 
       <div id="contact" data-section="contact">
         <ContactSplit
-          tag="Al Bar"
-          title="Visit Our Location"
-          description="Unit 12, First Floor, Al Barsha Mall, 23rd Street, Al Barsha 2, Dubai — Beside Al Barsha Pond Park. We're open to welcome you with authentic Japanese hospitality."
+          tag="Al Barsha"
+          title="Location"
+          description="Address: Unit 12, First Floor, Al Barsha Mall, 23rd Street, Al Barsha 2, Dubai
+Open: 9AM - 
+"
           mediaPosition="left"
           mediaAnimation="blur-reveal"
           useInvertedBackground={false}
