@@ -6,7 +6,6 @@ import HeroLogoBillboard from '@/components/sections/hero/HeroLogoBillboard';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import FeatureBento from '@/components/sections/feature/FeatureBento';
-import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
@@ -32,7 +31,6 @@ export default function LandingPage() {
           navItems={[
             { name: "Services", id: "services" },
             { name: "About", id: "about" },
-            { name: "Reviews", id: "reviews" },
             { name: "Location", id: "contact" },
             { name: "FAQ", id: "faq" }
           ]}
@@ -93,8 +91,8 @@ export default function LandingPage() {
 
       <div id="features" data-section="features">
         <FeatureBento
-          title="Why Ginza Beauty"
-          description="We combine traditional Japanese craftsmanship with modern techniques to deliver exceptional results."
+          title="Our Premium Features"
+          description="Experience excellence in every detail with our carefully curated services and hospitality."
           textboxLayout="default"
           useInvertedBackground={true}
           animationType="slide-up"
@@ -139,24 +137,6 @@ export default function LandingPage() {
         />
       </div>
 
-      <div id="testimonials" data-section="testimonials">
-        <TestimonialCardFifteen
-          testimonial="Perfect nails and beautiful natural lashes. The attention to detail and professionalism is unmatched. The serene atmosphere makes every visit special."
-          rating={5}
-          author="Sarah Johnson"
-          avatars={[
-            { src: "http://img.b2bpic.net/free-photo/front-view-business-woman-suit_23-2148603018.jpg", alt: "Sarah Johnson" },
-            { src: "http://img.b2bpic.net/free-photo/cute-hipster-woman-taking-photos-retro-camera_176420-16727.jpg", alt: "Fatima Al Mansouri" },
-            { src: "http://img.b2bpic.net/free-photo/thoughtful-business-woman-standing-with-crossed-arms_23-2148095675.jpg", alt: "Aisha Ahmed" },
-            { src: "http://img.b2bpic.net/free-photo/young-blonde-woman-smiling-city_839833-7650.jpg", alt: "Hana Martinez" },
-            { src: "http://img.b2bpic.net/free-photo/high-angle-modern-woman-talking-phone_23-2148415865.jpg", alt: "Emma Wilson" }
-          ]}
-          ratingAnimation="slide-up"
-          avatarsAnimation="slide-up"
-          useInvertedBackground={false}
-        />
-      </div>
-
       <div id="faq" data-section="faq">
         <FaqSplitMedia
           title="Frequently Asked Questions"
@@ -182,9 +162,6 @@ export default function LandingPage() {
               id: "faq-4",              title: "What makes Japanese nails different?",              content: "Japanese nail art emphasizes precision, minimalism, and natural beauty. Our artists use advanced techniques to create intricate designs with impeccable attention to detail."
             },
             {
-              id: "faq-5",              title: "Is the salon clean and hygienic?",              content: "Absolutely. We follow strict international hygiene standards. All tools are sterilized, and we maintain a pristine, serene environment for your safety and comfort."
-            },
-            {
               id: "faq-6",              title: "Do you offer custom color matching?",              content: "Yes! We work with you to find the perfect shades and designs that match your skin tone and style preferences. Personalization is at the heart of our service."
             }
           ]}
@@ -205,6 +182,7 @@ export default function LandingPage() {
           tagIcon={MapPin}
           tagAnimation="slide-up"
           buttonText="Get In Touch"
+          inputPlaceholder="Enter your email"
           onSubmit={() => {}}
         />
       </div>
@@ -223,8 +201,7 @@ export default function LandingPage() {
             {
               title: "Company",              items: [
                 { label: "About Us", href: "#about" },
-                { label: "Why Ginza Beauty", href: "#features" },
-                { label: "Reviews", href: "#testimonials" }
+                { label: "Our Features", href: "#features" }
               ]
             },
             {
