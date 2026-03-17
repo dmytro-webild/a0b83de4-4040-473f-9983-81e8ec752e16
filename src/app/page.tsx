@@ -47,8 +47,8 @@ export default function LandingPage() {
             { text: "Book Appointment", href: "#contact" },
             { text: "WhatsApp", href: "https://wa.me/971434071171" }
           ]}
-          background={{ variant: "aurora" }}
-          imageSrc="http://img.b2bpic.net/free-photo/young-woman-drinking-coffee-while-sitting-bed-hotel-room_23-2149304033.jpg?_wi=1"
+          background={{ variant: "plain" }}
+          imageSrc="http://img.b2bpic.net/free-photo/young-woman-drinking-coffee-while-sitting-bed-hotel-room_23-2149304033.jpg"
           imageAlt="Ginza Beauty Luxury Japanese Salon Interior"
           mediaAnimation="blur-reveal"
           buttonAnimation="slide-up"
@@ -164,7 +164,7 @@ export default function LandingPage() {
           useInvertedBackground={true}
           mediaAnimation="blur-reveal"
           faqsAnimation="slide-up"
-          imageSrc="http://img.b2bpic.net/free-photo/young-woman-drinking-coffee-while-sitting-bed-hotel-room_23-2149304033.jpg?_wi=2"
+          imageSrc="http://img.b2bpic.net/free-photo/young-woman-drinking-coffee-while-sitting-bed-hotel-room_23-2149304033.jpg"
           imageAlt="Ginza Beauty Salon FAQ"
           mediaPosition="left"
           faqs={[
