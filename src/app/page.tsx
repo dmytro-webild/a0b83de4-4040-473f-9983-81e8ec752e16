@@ -121,7 +121,7 @@ export default function LandingPage() {
 
       <div id="contact" data-section="contact">
         <ContactSplit
-          tag="Location & Contact"
+          tag="Al Bar"
           title="Visit Our Location"
           description="Unit 12, First Floor, Al Barsha Mall, 23rd Street, Al Barsha 2, Dubai — Beside Al Barsha Pond Park. We're open to welcome you with authentic Japanese hospitality."
           mediaPosition="left"
