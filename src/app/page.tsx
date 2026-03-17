@@ -8,7 +8,7 @@ import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import FeatureBento from '@/components/sections/feature/FeatureBento';
 import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
-import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
+import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import { Award, CheckCircle, Heart, MapPin, Shield, Sparkles, Star, Users, Zap, Phone, MessageCircle } from 'lucide-react';
 
@@ -192,7 +192,8 @@ export default function LandingPage() {
       </div>
 
       <div id="contact" data-section="contact">
-        <ContactSplitForm
+        <ContactSplit
+          tag="Location & Contact"
           title="Visit Our Location"
           description="Unit 12, First Floor, Al Barsha Mall, 23rd Street, Al Barsha 2, Dubai — Beside Al Barsha Pond Park. We're open to welcome you with authentic Japanese hospitality."
           mediaPosition="left"
@@ -200,21 +201,11 @@ export default function LandingPage() {
           useInvertedBackground={false}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AT21DDEbCUKElwIvjwYyyd5jJX/uploaded-1773735263329-p8fqropj.jpg"
           imageAlt="Ginza Beauty Salon Location"
-          inputs={[
-            {
-              name: "name",              type: "text",              placeholder: "Your Name",              required: true
-            },
-            {
-              name: "phone",              type: "tel",              placeholder: "Your Phone Number",              required: true
-            }
-          ]}
-          buttonText="Get Appointment Info"
-          onSubmit={(data) => {
-            const phone = data.phone.replace(/\D/g, '');
-            const name = encodeURIComponent(data.name);
-            const message = encodeURIComponent(`Hi! I'm ${data.name} and I'd like to book an appointment at Ginza Beauty.`);
-            window.open(`https://wa.me/971434071171?text=${message}`, '_blank');
-          }}
+          background={{ variant: "plain" }}
+          tagIcon={MapPin}
+          tagAnimation="slide-up"
+          buttonText="Get In Touch"
+          onSubmit={() => {}}
         />
       </div>
 
