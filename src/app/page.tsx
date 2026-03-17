@@ -5,11 +5,10 @@ import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarS
 import HeroLogoBillboard from '@/components/sections/hero/HeroLogoBillboard';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
-import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
-import { Award, CheckCircle, Heart, MapPin, Shield, Sparkles, Star, Users, Zap, Phone, MessageCircle } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -89,54 +88,6 @@ export default function LandingPage() {
         />
       </div>
 
-      <div id="features" data-section="features">
-        <FeatureBento
-          title="Our Premium Features"
-          description="Experience excellence in every detail with our carefully curated services and hospitality."
-          textboxLayout="default"
-          useInvertedBackground={true}
-          animationType="slide-up"
-          features={[
-            {
-              title: "Authentic Japanese Techniques",              description: "Precision methods rooted in Japanese beauty traditions and hospitality philosophy.",              bentoComponent: "icon-info-cards",              items: [
-                { icon: Sparkles, label: "First in UAE", value: "Authentic" },
-                { icon: Award, label: "Expert Artists", value: "Skilled" }
-              ]
-            },
-            {
-              title: "Premium Quality",              description: "High-end products and meticulous attention to detail in every service.",              bentoComponent: "icon-info-cards",              items: [
-                { icon: Shield, label: "Certified", value: "Professional" },
-                { icon: CheckCircle, label: "Long-lasting", value: "Results" }
-              ]
-            },
-            {
-              title: "Calm & Serene",              description: "A peaceful sanctuary designed for relaxation and rejuvenation.",              bentoComponent: "icon-info-cards",              items: [
-                { icon: Zap, label: "Clean", value: "Immaculate" },
-                { icon: Star, label: "Welcoming", value: "Omotenashi" }
-              ]
-            },
-            {
-              title: "Exceptional Hospitality",              description: "Personalized service rooted in Japanese 'Omotenashi' philosophy.",              bentoComponent: "icon-info-cards",              items: [
-                { icon: Heart, label: "Personal", value: "Attentive" },
-                { icon: Sparkles, label: "Premium", value: "Experience" }
-              ]
-            },
-            {
-              title: "4.9 Google Rating",              description: "Trusted by 280+ happy clients across Dubai.",              bentoComponent: "icon-info-cards",              items: [
-                { icon: Star, label: "Highly Rated", value: "4.9★" },
-                { icon: Users, label: "Happy Clients", value: "280+" }
-              ]
-            },
-            {
-              title: "Long-Lasting Results",              description: "Our techniques are designed for durability and natural beauty.",              bentoComponent: "icon-info-cards",              items: [
-                { icon: CheckCircle, label: "Touch-ups", value: "Every 4w" },
-                { icon: Zap, label: "Maintenance", value: "Simple" }
-              ]
-            }
-          ]}
-        />
-      </div>
-
       <div id="faq" data-section="faq">
         <FaqSplitMedia
           title="Frequently Asked Questions"
@@ -200,8 +151,7 @@ export default function LandingPage() {
             },
             {
               title: "Company",              items: [
-                { label: "About Us", href: "#about" },
-                { label: "Our Features", href: "#features" }
+                { label: "About Us", href: "#about" }
               ]
             },
             {
