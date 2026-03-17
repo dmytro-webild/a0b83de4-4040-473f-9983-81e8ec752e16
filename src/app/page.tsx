@@ -198,7 +198,7 @@ export default function LandingPage() {
           mediaPosition="left"
           mediaAnimation="blur-reveal"
           useInvertedBackground={false}
-          imageSrc="http://img.b2bpic.net/free-photo/young-woman-drinking-coffee-while-sitting-bed-hotel-room_23-2149304033.jpg?_wi=1"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AT21DDEbCUKElwIvjwYyyd5jJX/uploaded-1773735263329-p8fqropj.jpg"
           imageAlt="Ginza Beauty Salon Location"
           inputs={[
             {
