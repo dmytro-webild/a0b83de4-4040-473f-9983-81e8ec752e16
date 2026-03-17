@@ -8,9 +8,9 @@ import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import FeatureBento from '@/components/sections/feature/FeatureBento';
 import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
-import ContactCenter from '@/components/sections/contact/ContactCenter';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
-import { Award, CheckCircle, Heart, MapPin, Shield, Sparkles, Star, Users, Zap } from 'lucide-react';
+import { Award, CheckCircle, Heart, MapPin, Shield, Sparkles, Star, Users, Zap, Phone, MessageCircle } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -33,6 +33,7 @@ export default function LandingPage() {
             { name: "Services", id: "services" },
             { name: "About", id: "about" },
             { name: "Reviews", id: "reviews" },
+            { name: "Location", id: "contact" },
             { name: "FAQ", id: "faq" }
           ]}
           button={{ text: "Book Appointment", href: "#contact" }}
@@ -191,17 +192,29 @@ export default function LandingPage() {
       </div>
 
       <div id="contact" data-section="contact">
-        <ContactCenter
-          tag="Get in Touch"
-          title="Visit Us Today"
-          description="Unit 12, First Floor, Al Barsha Mall | 23rd Street, Al Barsha 2, Dubai | Beside Al Barsha Pond Park\n\nPhone: +971 4 340 7171\nWhatsApp: Available\n\nSun–Thu: 10:15 AM – 7:00 PM\nFri–Sat: 12:15 PM – 9:00 PM"
-          tagIcon={MapPin}
-          tagAnimation="slide-up"
-          background={{ variant: "plain" }}
+        <ContactSplitForm
+          title="Visit Our Location"
+          description="Unit 12, First Floor, Al Barsha Mall, 23rd Street, Al Barsha 2, Dubai — Beside Al Barsha Pond Park. We're open to welcome you with authentic Japanese hospitality."
+          mediaPosition="left"
+          mediaAnimation="blur-reveal"
           useInvertedBackground={false}
-          inputPlaceholder="Enter your email"
-          buttonText="Book Appointment"
-          termsText="By booking with us, you agree to our terms and confirm your appointment details will be used to contact you."
+          imageSrc="http://img.b2bpic.net/free-photo/young-woman-drinking-coffee-while-sitting-bed-hotel-room_23-2149304033.jpg?_wi=1"
+          imageAlt="Ginza Beauty Salon Location"
+          inputs={[
+            {
+              name: "name",              type: "text",              placeholder: "Your Name",              required: true
+            },
+            {
+              name: "phone",              type: "tel",              placeholder: "Your Phone Number",              required: true
+            }
+          ]}
+          buttonText="Get Appointment Info"
+          onSubmit={(data) => {
+            const phone = data.phone.replace(/\D/g, '');
+            const name = encodeURIComponent(data.name);
+            const message = encodeURIComponent(`Hi! I'm ${data.name} and I'd like to book an appointment at Ginza Beauty.`);
+            window.open(`https://wa.me/971434071171?text=${message}`, '_blank');
+          }}
         />
       </div>
 
@@ -226,7 +239,7 @@ export default function LandingPage() {
             {
               title: "Support",              items: [
                 { label: "FAQ", href: "#faq" },
-                { label: "Contact Us", href: "#contact" },
+                { label: "Location", href: "#contact" },
                 { label: "Aftercare Guide", href: "#" }
               ]
             },
